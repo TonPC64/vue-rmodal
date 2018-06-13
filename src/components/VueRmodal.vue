@@ -31,8 +31,10 @@
 </template>
 
 <script>
-import RModal from 'rmodal/dist/rmodal.js';
-  window.onload = function() {
+import RModal from 'rmodal/src/rmodal.js';
+export default {
+  name: 'rmodal',
+  mounted () {
     var modal = new RModal(document.getElementById('modal'), {
         //content: 'Abracadabra'
         beforeOpen: function(next) {
@@ -72,4 +74,5 @@ import RModal from 'rmodal/dist/rmodal.js';
 
     window.modal = modal;
   }
+}
 </script>
