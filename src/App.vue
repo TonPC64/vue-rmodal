@@ -5,12 +5,8 @@
 </template>
 
 <script>
-import VueRmodal from './components/VueRmodal';
 export default {
-  name: 'Example',
-  components: {
-    VueRmodal
-  }
+  name: 'Example'
 }
 </script>
 
