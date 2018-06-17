@@ -4,7 +4,8 @@
   "version": "1.0.1",
   "author": "Chanwit Piromplad <kingkong2103@gmail.com>",
   "license": "MIT",
-  "main": "public/vue-rmodal-min.js",
+  "main": "public/vue-rmodal.min.js",
+  "files": ["public"],
   "repository": {
     "url": "https://github.com/TonPC64/vue-rmodal.git"
   },
@@ -16,11 +17,7 @@
   "dependencies": {
     "vue": "^2.5.11"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
+  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
   "devDependencies": {
     "rmodal": "^1.0.30",
     "babel-core": "^6.26.0",
