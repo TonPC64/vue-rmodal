@@ -12,7 +12,7 @@ yarn add vue-rmodal rmodal
 
 ```js
 import VueRmodal from 'vue-rmodal'
-import RModal from 'rmodal/src/rmodal.js'
+import RModal from 'rmodal'
 
 Vue.use(VueRmodal, RModal)
 
@@ -27,7 +27,7 @@ Vue.use(VueRmodal, RModal)
 
 <!-- just write child html in component -->
 <div>
-  <a @click="$rmodal.testModal.open()" id="showModal" class="btn btn-success">Show modal</a>
+  <a @click="$rmodal.ModalName.open()" id="showModal" class="btn btn-success">Show modal</a>
 
   <vue-rmodal name="ModalName" :setting="setting">
     <!-- write modal here -->
@@ -48,8 +48,8 @@ Vue.use(VueRmodal, RModal)
           </div>
 
           <div class="modal-footer">
-            <button class="btn btn-default" type="button" @click="$rmodal['testModal'].close();">Cancel</button>
-            <button class="btn btn-primary" type="submit" @click="$rmodal['testModal'].close();">Save</button>
+            <button class="btn btn-default" type="button" @click="$rmodal['ModalName'].close();">Cancel</button>
+            <button class="btn btn-primary" type="submit" @click="$rmodal['ModalName'].close();">Save</button>
           </div>
         </form>
       </div>
@@ -58,5 +58,11 @@ Vue.use(VueRmodal, RModal)
 
 </div>
 ```
+## Props
+
+| Name    | Type   | Default | Description                                       |
+| :------ | :----- | :------ | :------------------------------------------------ |
+| name    | String | ''      | specify name modal to use.                        |
+| setting | Object | {}      | docs setting is [options](https://rmodal.js.org/) |
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).

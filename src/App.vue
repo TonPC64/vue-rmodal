@@ -1,8 +1,8 @@
 <template>
   <div>
-    <a @click="$rmodal.testModal.open()" id="showModal" class="btn btn-success">Show modal</a>
+    <a @click="$rmodal.ModalName.open()" id="showModal" class="btn btn-success">Show modal</a>
 
-    <vue-rmodal name="testModal" :setting="setting">
+    <vue-rmodal name="ModalName" :setting="setting">
       <div class="modal-dialog animated">
         <div class="modal-content">
           <form class="form-horizontal" method="get">
@@ -20,8 +20,8 @@
             </div>
 
             <div class="modal-footer">
-              <button class="btn btn-default" type="button" @click="$rmodal['testModal'].close();">Cancel</button>
-              <button class="btn btn-primary" type="submit" @click="$rmodal['testModal'].close();">Save</button>
+              <button class="btn btn-default" type="button" @click="$rmodal['ModalName'].close();">Cancel</button>
+              <button class="btn btn-primary" type="submit" @click="$rmodal['ModalName'].close();">Save</button>
             </div>
           </form>
         </div>
@@ -53,7 +53,7 @@ export default {
         }
       }
     }
-  }
+  },
 }
 </script>
 
