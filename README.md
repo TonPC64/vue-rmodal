@@ -1,8 +1,8 @@
 # vue-rmodal
 
-> A simple 1.2 KB modal dialog with no external dependencies
+> A simple modal dialog with no external dependencies for VueJS
 
-[rmodal.js](https://github.com/zewish/rmodal.js)
+## [rmodal.js](https://github.com/zewish/rmodal.js)
 
 ## Installation
 
@@ -58,11 +58,10 @@ Vue.use(VueRmodal, RModal)
 
 </div>
 ```
+
 ## Props
 
 | Name    | Type   | Default | Description                                       |
 | :------ | :----- | :------ | :------------------------------------------------ |
 | name    | String | ''      | specify name modal to use.                        |
 | setting | Object | {}      | docs setting is [options](https://rmodal.js.org/) |
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
